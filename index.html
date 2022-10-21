@@ -82,7 +82,7 @@
             </li>
 
             <!-- <button id="switchButton"><i class="fa-regular fa-moon"></i></button> -->
-            <button class="btn" id="switchButton"  title="Click to switch theme">
+            <button class="btn" id="switchButton" title="Click to switch theme">
               <i class="far fa-moon"></i>
               <i class="far fa-sun"></i>
             </button>
@@ -459,7 +459,7 @@
       </div>
 
       <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
+      <ul class="nav nav-tabs d-none d-md-flex" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="pill" href="#projectone">Project One</a>
         </li>
@@ -470,58 +470,150 @@
           <a class="nav-link" data-toggle="pill" href="#projectthree">Project Three</a>
         </li>
       </ul>
+      <!-- display on mobile -->
 
+      <div id="accordion" class="d-block d-md-none">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Project One
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Why a visual identity system is more memorable</h3>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam
+                    repellendus. consequatur minus
+                    aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                  </p>
+                  <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-5">
+                  <img src="./assets/b4.jpg" class="img-fluid img-curve" alt="project image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Project Two
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="./assets/b5.jpg" class="img-fluid img-curve" alt="project image">
+                </div>
+                <div class="col-md-6 mt-md-0 mt-5">
+                  <h3>Make website that looks Lorem, ipsum dolor.</h3>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam
+                    repellendus. consequatur minus
+                    aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                  </p>
+                  <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                Project Three
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>Why a visual identity system is more memorable</h3>
+                  <p>
+                    Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam
+                    repellendus. consequatur minus
+                    aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                  </p>
+                  <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-5">
+                  <img src="./assets/b6.jpg" class="img-fluid img-curve" alt="project image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Tab panes -->
-      <div class="tab-content">
-        <div id="projectone" class="container tab-pane active"><br>
+      <div class="tab-content d-none d-md-flex">
+        <div id="projectone" class="container tab-pane active">
+          <br />
           <div class="row">
             <div class="col-md-6">
               <h3>Why a visual identity system is more memorable</h3>
               <p>
-                Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam
-                repellendus. consequatur minus
-                aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                Lorem ipsum dolor sit, adipisicing elit repudiandae
+                perferendis dolores praesentium nulla quibusdam repellendus.
+                consequatur minus aliquam corrupti blanditiis, necessitatibus
+                consectetur modi ipsum natus accusantium sit pariatur.
               </p>
               <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
             </div>
             <div class="col-md-6 mt-md-0 mt-5">
-              <img src="./assets/b4.jpg" class="img-fluid img-curve" alt="project image">
+              <img src="./assets/b4.jpg" class="img-fluid img-curve" alt="project image" />
             </div>
           </div>
         </div>
 
-
-        <div id="projecttwo" class="container tab-pane fade"><br>
+        <div id="projecttwo" class="container tab-pane fade">
+          <br />
           <div class="row">
             <div class="col-md-6">
-              <img src="./assets/b5.jpg" class="img-fluid img-curve" alt="project image">
+              <img src="./assets/b5.jpg" class="img-fluid img-curve" alt="project image" />
             </div>
             <div class="col-md-6 mt-md-0 mt-5">
               <h3>Make website that looks Lorem, ipsum dolor.</h3>
               <p>
-                Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam
-                repellendus. consequatur minus
-                aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                Lorem ipsum dolor sit, adipisicing elit repudiandae
+                perferendis dolores praesentium nulla quibusdam repellendus.
+                consequatur minus aliquam corrupti blanditiis, necessitatibus
+                consectetur modi ipsum natus accusantium sit pariatur.
               </p>
               <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
             </div>
           </div>
         </div>
 
-
-        <div id="projectthree" class="container tab-pane fade"><br>
+        <div id="projectthree" class="container tab-pane fade">
+          <br />
           <div class="row">
             <div class="col-md-6">
               <h3>Why a visual identity system is more memorable</h3>
               <p>
-                Lorem ipsum dolor sit, adipisicing elit repudiandae perferendis dolores praesentium nulla quibusdam
-                repellendus. consequatur minus
-                aliquam corrupti blanditiis, necessitatibus consectetur modi ipsum natus accusantium sit pariatur.
+                Lorem ipsum dolor sit, adipisicing elit repudiandae
+                perferendis dolores praesentium nulla quibusdam repellendus.
+                consequatur minus aliquam corrupti blanditiis, necessitatibus
+                consectetur modi ipsum natus accusantium sit pariatur.
               </p>
               <a href="#url" class="btn btn-outline-primary theme-button mt-3">Know More</a>
             </div>
             <div class="col-md-6 mt-md-0 mt-5">
-              <img src="./assets/b6.jpg" class="img-fluid img-curve" alt="project image">
+              <img src="./assets/b6.jpg" class="img-fluid img-curve" alt="project image" />
             </div>
           </div>
         </div>
@@ -534,25 +626,36 @@
     <div class="container py-5">
       <div class="test__header text-center mx-auto">
         <h6 class="title">Our Clients Testimonials</h6>
-        <h3 style="font-size:46px; color:#2C3038; font-weight: 700;">What People Say </h3>
-        <p class="my-3" style="font-size:16px; color:#5a5a5a;"> Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia Curae;
-          Nulla mollis </br> dapibus nunc, ut rhoncus
-          turpis sodales quis. Integer sit amet mattis quam.</p>
+        <h3 style="font-size: 46px; color: #2c3038; font-weight: 700">
+          What People Say
+        </h3>
+        <p class="my-3" style="font-size: 16px; color: #5a5a5a">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis <br />
+          dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet
+          mattis quam.
+        </p>
       </div>
 
       <div class="service_slider">
         <div class="slick__slide">
           <div class="item">
             <div class="slider-info mt-lg-4 mt-3">
-              <div class="img-circle">
-                <img src="./assets/team3.jpg" class="img-fluid testimonial-img" alt="client image">
+              <div class="img-circle mb-3">
+                <img
+                  src="./assets/team3.jpg"
+                  class="img-fluid testimonial-img"
+                  alt="client image"
+                />
               </div>
               <div class="message">
                 <span class="fa fa-quote-left" aria-hidden="true"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
-                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
-                  quaerat et.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda corporis deleniti praesentium doloremque.
+                  Repellendus soluta quos nemo quisquam consectetur temporibus
+                  quam obcaecati sapiente quaerat et.
+                </p>
                 <div class="name mt-4">
                   <h4>Isabella Mia</h4>
                   <p>Company name</p>
@@ -562,14 +665,21 @@
           </div>
           <div class="item">
             <div class="slider-info mt-lg-4 mt-3">
-              <div class="img-circle">
-                <img src="./assets/team4.jpg" class="img-fluid testimonial-img" alt="client image">
+              <div class="img-circle mb-3">
+                <img
+                  src="./assets/team4.jpg"
+                  class="img-fluid testimonial-img"
+                  alt="client image"
+                />
               </div>
               <div class="message">
                 <span class="fa fa-quote-left" aria-hidden="true"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
-                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
-                  quaerat et.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda corporis deleniti praesentium doloremque.
+                  Repellendus soluta quos nemo quisquam consectetur temporibus
+                  quam obcaecati sapiente quaerat et.
+                </p>
                 <div class="name mt-4">
                   <h4>Benjamin Lucas</h4>
                   <p>Company name</p>
@@ -579,14 +689,21 @@
           </div>
           <div class="item">
             <div class="slider-info mt-lg-4 mt-3">
-              <div class="img-circle">
-                <img src="./assets/team5.jpg" class="img-fluid testimonial-img" alt="client image">
+              <div class="img-circle mb-3">
+                <img
+                  src="./assets/team5.jpg"
+                  class="img-fluid testimonial-img"
+                  alt="client image"
+                />
               </div>
               <div class="message">
                 <span class="fa fa-quote-left" aria-hidden="true"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
-                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
-                  quaerat et.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda corporis deleniti praesentium doloremque.
+                  Repellendus soluta quos nemo quisquam consectetur temporibus
+                  quam obcaecati sapiente quaerat et.
+                </p>
                 <div class="name mt-4">
                   <h4>Oliver Bradley</h4>
                   <p>Company name</p>
@@ -596,14 +713,21 @@
           </div>
           <div class="item">
             <div class="slider-info mt-lg-4 mt-3">
-              <div class="img-circle">
-                <img src="./assets/team6.jpg" class="img-fluid testimonial-img" alt="client image">
+              <div class="img-circle mb-3">
+                <img
+                  src="./assets/team6.jpg"
+                  class="img-fluid testimonial-img"
+                  alt="client image"
+                />
               </div>
               <div class="message">
                 <span class="fa fa-quote-left" aria-hidden="true"></span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium
-                  doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente
-                  quaerat et.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda corporis deleniti praesentium doloremque.
+                  Repellendus soluta quos nemo quisquam consectetur temporibus
+                  quam obcaecati sapiente quaerat et.
+                </p>
                 <div class="name mt-4">
                   <h4>William James</h4>
                   <p>Company name</p>
@@ -618,16 +742,27 @@
 
   <!-- CONTACT  -->
   <section class="contact py-5">
-    <div class="container py-md-3 text-center">
+    <div class="container-fluid py-md-3 text-center">
       <div class="contact__content text-center mx-auto">
-        <h3>Ready to build your own brand </br> community? </h3>
-        <p class="my-3"> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-          Nulla mollis dapibus </br> nunc, ut rhoncus
-          turpis sodales quis. Integer sit amet mattis quam.</p>
+        <h3>
+          Ready to build your own brand <br />
+          community?
+        </h3>
+        <p class="my-3">
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia Curae; Nulla mollis dapibus <br />
+          nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+        </p>
       </div>
       <div class="buttons mt-5">
-        <a href="contact.html" class="btn btn-outline-primary mr-2 theme-button">Book a Demo</a>
-        <a href="contact.html" class="btn btn-primary theme-button ml-2">Get Started</a>
+        <a
+          href="contact.html"
+          class="btn btn-outline-primary mr-2 theme-button"
+          >Book a Demo</a
+        >
+        <a href="contact.html" class="btn btn-primary theme-button ml-2"
+          >Get Started</a
+        >
       </div>
     </div>
   </section>
@@ -672,33 +807,72 @@
             </div>
           </div>
           <div class="col-lg-6 col-md-12 column pl-lg-5 column4 mt-lg-0 mt-5">
-            <h3>Newsletter </h3>
+            <h3>Newsletter</h3>
             <div class="end-column">
               <h4>Get latest updates and offers.</h4>
               <form action="#" class="subscribe" method="post">
-                <input type="email" name="email" placeholder="Email Address" required="">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required=""
+                />
                 <button type="submit">Go</button>
               </form>
-              <p>Sign up for our latest news & articles. We won’t give you spam mails.</p>
+              <p class="mt-4">
+                Sign up for our latest news & articles. We won’t give you spam
+                mails.
+              </p>
             </div>
           </div>
         </div>
-        <div class="d-flex below-section justify-content-between align-items-center pt-4 mt-5">
-          <div class="columns text-lg-left text-center">
-            <p>&copy; 2020 Masterwork. All rights reserved | Designed by <a href="https://w3layouts.com/">W3Layouts</a>
+        <div
+          class="row below-section justify-content-between align-items-center pt-4 mt-5"
+        >
+          <div class="columns text-lg-left text-center col-12 col-lg-8">
+            <p>
+              &copy; 2020 Masterwork. All rights reserved | Designed by
+              <a href="https://w3layouts.com/">W3Layouts</a>
             </p>
           </div>
-          <div class="columns-2 mt-lg-0 mt-3">
-            <ul class="social">
-              <li><a href="#facebook"><span class="fa-brands fa-facebook-f" aria-hidden="true"></span></a>
+          <div class="columns-2 mt-lg-0 mt-3 col-12 col-lg-4">
+            <ul class="social text-center">
+              <li>
+                <a href="#facebook"
+                  ><span
+                    class="fa-brands fa-facebook-f"
+                    aria-hidden="true"
+                  ></span
+                ></a>
               </li>
-              <li><a href="#linkedin"><span class="fa-brands fa-linkedin-in" aria-hidden="true"></span></a>
+              <li>
+                <a href="#linkedin"
+                  ><span
+                    class="fa-brands fa-linkedin-in"
+                    aria-hidden="true"
+                  ></span
+                ></a>
               </li>
-              <li><a href="#twitter"><span class="fa-brands fa-twitter" aria-hidden="true"></span></a>
+              <li>
+                <a href="#twitter"
+                  ><span
+                    class="fa-brands fa-twitter"
+                    aria-hidden="true"
+                  ></span
+                ></a>
               </li>
-              <li><a href="#google"><span class="fa-brands fa-google-plus-g" aria-hidden="true"></span></a>
+              <li>
+                <a href="#google"
+                  ><span
+                    class="fa-brands fa-google-plus-g"
+                    aria-hidden="true"
+                  ></span
+                ></a>
               </li>
-              <li><a href="#github"><span class="fa-brands fa-github" aria-hidden="true"></span></a>
+              <li>
+                <a href="#github"
+                  ><span class="fa-brands fa-github" aria-hidden="true"></span
+                ></a>
               </li>
             </ul>
           </div>
@@ -707,20 +881,18 @@
     </div>
   </section>
 
-
-
-
   <!-- backToTop -->
   <div class="backtop" onclick="backToTop()">
     <i class="fa-solid fa-arrow-up"></i>
   </div>
 
-
   <!-- JS -->
 
-
   <!-- JQUERY -->
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    crossorigin="anonymous"
+  ></script>
   <script>
     $(window).on("scroll", function () {
       var scroll = $(window).scrollTop();
@@ -739,21 +911,33 @@
     });
     function backToTop() {
       document.documentElement.scrollTop = 0;
-    };
+    }
   </script>
 
   <!-- slick   -->
   <script src="./libs/Slick/slick.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.slick__slide').slick({
-        // setting- name: setting - value
+      $(".slick__slide").slick({
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 2,
         arrows: false,
         autoplay: false,
         dots: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              infinite: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+              autoplay: false,
+              dots: true,
+            },
+          },
+        ],
       });
     });
   </script>
@@ -763,29 +947,30 @@
   <script src="./libs/OwlCarousel/dist/owl.carousel.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.owl-two').owlCarousel({
-      });
+      $(".owl-two").owlCarousel({});
     });
-    
   </script>
-
 
   <!-- COUNTER -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="./libs/count/jquery.countup.min.js"></script>
   <script>
-      $(".counter").countUp();
+    $(".counter").countUp();
   </script>
   <!-- BS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
-  // DARKTHEME
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"
+  ></script>
+  <!-- DARK THEME -->
   <script>
-      document.getElementById("switchButton").onclick = function () {
-        document.getElementById("myBody").classList.toggle("dark");
-      };
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
   </script>
-
 </body>
 </html>
